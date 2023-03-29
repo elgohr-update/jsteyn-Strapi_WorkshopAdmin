@@ -16,7 +16,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@v4
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         registry: ${{ env.REGISTRY }}
         name: ${{ env.IMAGE_NAME }}
